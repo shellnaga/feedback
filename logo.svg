@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Shell'Naga">
+  <rect width="64" height="64" rx="14" fill="#0F1B2D"/>
+  <path d="M17 22L8 32l9 10" fill="none" stroke="#F0CF6A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 22l9 10-9 10" fill="none" stroke="#F0CF6A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 7L32 31L21 31Z" fill="#BDF0FA"/>
+  <path d="M32 7L43 31L32 31Z" fill="#4CC6EC"/>
+  <path d="M21 31L32 31L32 57Z" fill="#1C9FD0"/>
+  <path d="M32 31L43 31L32 57Z" fill="#0E6E98"/>
+</svg>

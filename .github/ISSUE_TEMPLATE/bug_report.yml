@@ -1,0 +1,72 @@
+name: Bug report
+description: Something in Shell'Naga does not work as it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. For ideas and questions, use [Discussions](https://github.com/shellnaga/shellnaga/discussions).
+        **Please do not include passwords, private keys, host names, IP addresses or other personal data** in this report.
+  - type: input
+    id: version
+    attributes:
+      label: Shell'Naga version
+      description: Settings › App › About, or the name of the installer you ran.
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      description: For Windows, the build from Settings › System › About (for example 24H2, build 26100). For Linux, the distribution and version.
+    validations:
+      required: true
+  - type: input
+    id: shell
+    attributes:
+      label: Shell or profile
+      description: The profile of the tab where it happened.
+      placeholder: "PowerShell 7, WSL Ubuntu, SSH, serial, ..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Type ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Log or screenshot (optional)
+      description: Paste text or drag an image here. Remove anything personal first.
+    validations:
+      required: false

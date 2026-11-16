@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ideas & questions
+    url: https://github.com/shellnaga/shellnaga/discussions
+    about: Feature ideas, how-to questions and general feedback go to Discussions.
+  - name: Security
+    url: mailto:support@shellnaga.sh
+    about: Report a vulnerability by email. Please do not open a public issue for it.
+  - name: Download Shell'Naga
+    url: https://shellnaga.sh/#download
+    about: The official download page.
