@@ -2,6 +2,18 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/shellnaga/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.0 — 2026-11-14
+
+- 15 free coding fonts to install from Settings › Appearance, no admin needed.
+- What's new now shows in your language, as an easy-to-read list.
+- Anonymous statistics have three levels: All statistics, Errors only and Off.
+- Unexpected closes and failed updates are now counted, so we can fix them sooner.
+- How long you use the app is counted only in broad ranges, and only with All statistics.
+- Closing a tab no longer asks about system programs that aren't running in it.
+- Commands typed while the PC is busy are no longer marked as finished before they end.
+- tmux: if the connection drops while opening a session, the tab no longer gets stuck.
+- Plugins: removing a plugin no longer fails with an "Access denied" error.
+- Other stability fixes.
 
 ## 0.1.2 — 2026-11-12
 
