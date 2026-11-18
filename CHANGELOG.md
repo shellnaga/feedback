@@ -2,6 +2,27 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/shellnaga/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.1 — 2026-11-17
+
+- Optional AI assistant, off by default: explains a failed command or writes one for you.
+- The AI uses a local model or your own key, and never runs a command on its own.
+- Drag a pane by its handle to another spot, to the tab bar or out into a new window.
+- Split menus show where the new pane goes, and panes can swap places.
+- "Update now" looks for the newest version first, so it no longer installs an older one.
+- Settings › Appearance › Window colors › Match the scheme: the bar, tabs, menus, dialogs and Settings take your color scheme's own accent instead of Shell'Naga's cyan.
+- Window colors › Shell'Naga: the bar and menus follow the light or dark mode you chose in Shell'Naga.
+- The default font now has every weight from 100 to 800, and the weight lists show only the weights your font has.
+- Bold in bright colors shows again in Grass, Ocean and Red Sands.
+- The Appearance preview now shows ligatures, symbols from the fallback font, bold in bright colors and the inner margin.
+- Open in WinSCP: keys that only came from the synced folder aren't trusted; WinSCP asks.
+- Vault: a vault that can't be read right now (say, in use by another program) offers Try again and can no longer be deleted until it reads again.
+- Sync: if this PC's record of the vault's version is damaged, new versions from the folder wait for Push now or Pull now instead of coming in on their own.
+- Vault: when a change can't be saved, it is no longer kept as if it were: a removed entry comes back and an updated password goes back to the saved one.
+- The splash screen's loading bar is now amber, in Shell'Naga's gold.
+- Keyboard focus rings are easier to see on every background.
+- shellnaga --version prints the version without opening a window.
+- Other stability fixes.
+
 ## 0.2.0 — 2026-11-14
 
 - 15 free coding fonts to install from Settings › Appearance, no admin needed.
