@@ -2,6 +2,22 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/shellnaga/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.3 — 2026-11-20
+
+- Ctrl+Shift+B now shows or hides the profile sidebar, and a button for it sits at the end of the tab bar; to give the key back to a program (nvim, helix), set `"ctrl+shift+b" = "none"` in Settings › Key bindings.
+- The ~/.ssh/config section is now called "SSH config" in Connect…, the sidebar and Settings › Profiles, with the path beside it.
+- Settings: an option that has a key of its own shows it beside its name (Profiles sidebar, Ctrl+Shift+B) and follows Key bindings when you change it.
+- The broadcast indicator no longer disappears in a narrow window: with no room left it becomes a small ● mark that shows the full text when you point at it.
+- Screen readers (Narrator, NVDA) now find the buttons of the tab bar and the title bar (New tab, Profiles, Settings, the sidebar button, Minimize, Maximize, Close) in a "Window controls" group, each named with its key, and can press them.
+- Snippets from a plugin or the synced folder that are not yet confirmed here are typed only while the pane's shell waits at its prompt, checked when you are asked and again when you confirm, and never go to the other panes by broadcast.
+- When a program keeps a snippet from outside out, the message names it ("pwsh runs in this pane…"); on Windows any program the shell started counts, a Start-Job too.
+- MCP: when a client asks to type, the question names the program in front of the shell ("python3 is running in front of the shell."), and Type checks the pane again: if the shell or that program changed, nothing is typed and the client gets an error.
+- SFTP: the progress bars and the state of transfers can now be read in every color scheme.
+- The splash screen's loading bar is blue again.
+- Updating is faster: Windows no longer creates a restore point for each update.
+- Tabs opened with `--profile` or from the jump list no longer say "restored": they show "[SSH session · Enter to connect]" (or the serial, Telnet or raw socket version) and wait for Enter; only a session brought back from the last run says "restored".
+- Correction to the 0.2.2 notes: in Connect…, “Save this connection” is on for a destination typed in the box and off when the destination comes from a link or `--quick-connect`.
+
 ## 0.2.2 — 2026-11-19
 
 - Connect… (Ctrl+Shift+O): one box for saved connections, recent ones and ~/.ssh/config hosts; type user@host to connect.
