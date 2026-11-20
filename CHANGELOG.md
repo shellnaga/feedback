@@ -2,6 +2,29 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/shellnaga/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.4 — 2026-11-20
+
+- The profile sidebar has a search field on top: type to filter by name, user, host or group, with the part found in bold; ↑ ↓ move, Enter opens, Ctrl+Enter opens in a pane to the right, F2 edits.
+- Ctrl+Shift+B now puts the keyboard in the sidebar's search, opening the sidebar if it is closed, and closes it when the keyboard is already there; Esc goes back to the terminal and leaves the sidebar open.
+- "Open now", at the top of the sidebar, lists the profiles that have a tab in this window: a connection with a green dot (connected) or a red one (dropped) and for how long, a local shell with a grey one; Enter there goes to the open tab instead of opening another.
+- Ctrl+. in the sidebar pins a profile to "Favorites ★", under the open tabs, or takes it off (a ★ marks it in its group too); the sidebar also remembers which groups were folded.
+- The sidebar's row under the pointer, or selected, has buttons to open in a new tab, open in a pane to the right and edit, each with its key in the tooltip; the keys are also in the sidebar's footer.
+- The right-click menu of a connection in the sidebar has "Copy ssh command", as in Connect….
+- Drag the sidebar's edge to change its width; below 120 px it becomes a narrow column of initials with the state dot, the full name in the tooltip and for screen readers.
+- Screen readers find the sidebar's search and its rows, with each connection's state in words.
+- New shortcuts: Ctrl+Shift+S opens or closes the SFTP panel (SSH tabs only; elsewhere the key goes to the program), Ctrl+Shift+L starts or stops saving the output, Ctrl+Alt+Shift+B turns broadcasting to all panes on or off. With Tabby's shortcuts imported, Ctrl+Shift+S stays split right, and any of them can be given back with "none" in Settings › Key bindings.
+- Ctrl+Shift+/ opens "Keyboard shortcuts": every shortcut in use, yours included, by area, with a search; the same key closes it.
+- The key that opens a panel or sheet also closes it (Ctrl+Shift+L with the Save output sheet, the palettes), and the keys of symbols are shown as your keyboard layout types them.
+- The terminal menu shows the keys of Open SFTP, Save output to file and the broadcasts.
+- Agent usage (Settings › Agent usage, off by default): a tab running Claude Code or Codex shows a chip with the 5-hour quota (or the context), and a click on it or Ctrl+Shift+M opens a panel with the context, the 5-hour and 7-day quotas, a warning when a quota runs out at the current pace before it resets, the session's estimated cost and today's tokens of each agent. A bar at the bottom of the window with the whole line is an option.
+- Agent usage reads the session files of Claude Code and Codex on this computer only: numbers, model, time and folder, never the conversation, and nothing leaves the computer. A file in a form the app does not know hides the numbers instead of showing wrong ones.
+- Agent usage: Claude Code tells its quotas only to its status line. "Connect to Claude Code…" adds Shell'Naga's command beside your status line in ~/.claude/settings.json, after showing it; your line stays the same and keeps working even if Shell'Naga is removed, a copy of the file is kept, and "Disconnect…" puts it back. On Windows without Git Bash (PowerShell) it connects only when you have no status line of your own. Codex's quotas need nothing.
+- The installer opens on one screen with the brand: "Install for me" (no administrator rights) or "Options…" for all users, the PATH and the shortcuts; at the end, "Launch Shell'Naga".
+- When Shell'Naga is already installed for all users, the installer offers "Update for all users" first, instead of a second copy for you.
+- "Launch Shell'Naga" at the end of the installer opens the first tab in your user folder, not in C:\Windows\system32.
+- From the update after 0.2.4 on, updating from the app shows Shell'Naga's splash screen where the window was until the new version opens, instead of the Windows Installer box (an install for all users still asks for administrator rights).
+- The Roll back option is gone; a failed update still restores the previous version by itself.
+
 ## 0.2.3 — 2026-11-20
 
 - Ctrl+Shift+B now shows or hides the profile sidebar, and a button for it sits at the end of the tab bar; to give the key back to a program (nvim, helix), set `"ctrl+shift+b" = "none"` in Settings › Key bindings.
