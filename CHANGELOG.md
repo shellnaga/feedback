@@ -2,6 +2,31 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/shellnaga/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.5 — 2026-11-21
+
+- SSH: the passphrase of an encrypted key is asked only after the server accepts that key; a key the server refuses asks nothing, and the login goes on to the next way in (the saved password, for example). An old PEM key with no .pub beside it still asks first, as in OpenSSH.
+- The passphrase sheet says it unlocks the key file on this computer and is not the server's password; "Skip this key" (or Esc) goes on to the next way in, a passphrase you chose to save goes to the vault only once the key has logged in, and the question closes by itself if the connection drops.
+- Hosts of ~/.ssh/config can be edited: Edit… (Settings › Profiles, F2 in the sidebar, Ctrl+E in Connect…) opens the SSH sheet filled with the host, and saving makes a profile in profiles.toml in its place, with the host's saved password, favorite and recent entry; ~/.ssh/config is never changed.
+- A profile's color (or its group's) now colors the tabs it opens and its initials in the narrow sidebar; a color picked from the tab's menu still comes first.
+- The sidebar has a + beside its search with New SSH connection…, New profile… and Connect…; a destination typed in the search (user@host, host:port, ssh://…) puts "Connect to …" on top, and Enter connects.
+- The sidebar's footer shows its keys as keycaps in two aligned columns: Enter open, Ctrl+Enter split, F2 edit, Ctrl+. pin, with the pin key as your keyboard layout types it.
+- A double click on a profile in the sidebar opens one tab and the list stays still under the pointer; after Ctrl+Shift+B, what you type goes to the sidebar's search, never to the shell.
+- Each window has its own sidebar: Ctrl+Shift+B shows or hides it in that window only, and the setting is how the next window opens.
+- Favorites can be put in order with Alt+↑ and Alt+↓, Move up and Move down in the row's menu, or by dragging; the menu also has Pin to Favorites and Unpin from Favorites.
+- In "Open now", a tab whose profile was deleted only goes to its tab, its other buttons dimmed with the reason in the tooltip; a deleted profile also leaves Favorites and the recent list.
+- In the sidebar's search, the first Esc clears it and the second goes back to the terminal, "No profile matches" says when nothing is found, and screen readers stay in the field while you type and hear how many results there are.
+- Ctrl+Shift+B (profile sidebar), Ctrl+Shift+L (save output) and Ctrl+Shift+/ (keyboard shortcuts) are the window's, so a program in the terminal does not get them; if you need one there (a tmux prefix typed with Shift held), give it back with "none" in Settings › Key bindings.
+- Focus rings show only when you use the keyboard: a click hides them in that window until the next key, a text field keeps its ring, and moving with a screen reader shows them again.
+- Checkboxes have a smooth check mark and an outline that stays visible in every color scheme and at every display scale.
+- Agent usage: the panel is now a card with the context as a meter, the 5-hour and 7-day quotas and when they reset (or Connect to Claude Code), the session's estimated cost at API prices and how long it has run, and today's tokens of each agent; Esc or a click outside closes it.
+- The agent chip shows the context ("claude · ctx 26%") and its dot says working (green) or idle (grey); the click that brings the window back, or one on the chip of a tab behind, only selects the tab instead of opening the panel.
+- Agent usage history (Open history on the card, the command palette or Settings › Agent usage) opens a tab with this computer's usage: tokens, estimated cost, sessions and active hours against the period before, by day, project, model, kind of token and hour of the week, each session in detail, and Export CSV. It reads only the session files on this computer, and nothing leaves it.
+- Importing from MobaXterm 26.6 brings its serial sessions with their port and speed (they were skipped as "invalid port"); data bits, parity and flow control stay at 8N1 without flow control.
+- Screen readers say the window and the terminal when you come back with Alt+Tab, switch tabs, or split or close a pane, also in a window that opened behind another.
+- An SSH key file that exists but cannot be read is named in the login error with the reason ("access denied"), and the login goes on to the next way in.
+- A profile in profiles.toml with an invalid id shows a warning on Settings › Profiles instead of disappearing silently; the other profiles still load.
+- Tab titles show a composed emoji (a family, a skin tone) as one, cut it whole when the title is too long, and show Hebrew or Arabic in reading order; so do the sidebar's names.
+
 ## 0.2.4 — 2026-11-20
 
 - The profile sidebar has a search field on top: type to filter by name, user, host or group, with the part found in bold; ↑ ↓ move, Enter opens, Ctrl+Enter opens in a pane to the right, F2 edits.
