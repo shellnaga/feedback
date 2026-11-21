@@ -2,6 +2,10 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/shellnaga/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.6 — 2026-11-21
+
+- The terminal is no longer announced as "read only", so NVDA speaks the letters and words you type, as it does in Windows Terminal.
+
 ## 0.2.5 — 2026-11-21
 
 - SSH: the passphrase of an encrypted key is asked only after the server accepts that key; a key the server refuses asks nothing, and the login goes on to the next way in (the saved password, for example). An old PEM key with no .pub beside it still asks first, as in OpenSSH.
