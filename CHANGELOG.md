@@ -2,6 +2,16 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/shellnaga/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.7 — 2026-11-21
+
+- Tabs: Settings › Window › Tabs › Style chooses the look of the tab bar: Mac, the rounded bar with the tabs inside, as before; or Windows, tabs with rounded tops up in the title bar, the active one joined to the terminal, as in Windows Terminal.
+- Tabs: the × that closes a tab is two thin strokes, quiet until the pointer is on it.
+- Tabs: the title of a tab under the pointer is easier to read in the light theme.
+- Tabs: in the light theme, the ring around the active tab of the Mac style is easier to see.
+- Ctrl+Shift+B shows the profile sidebar faster, and the sidebar now slides open and shut.
+- What's new after an update shows the notes of every version you skipped, newest first, each under its version.
+- Statistics: at All statistics, the daily count also says, in ranges, on how many of the 7 days before you opened the app, how much memory the PC has and who makes its graphics card (never the model); the days of use stay on your PC and go away when you turn the statistics off. Errors only and Off send none of it.
+
 ## 0.2.6 — 2026-11-21
 
 - The terminal is no longer announced as "read only", so NVDA speaks the letters and words you type, as it does in Windows Terminal.
