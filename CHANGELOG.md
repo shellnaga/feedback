@@ -2,6 +2,10 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/shellnaga/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.8 — 2026-11-21
+
+- What's new also shows the notes of the versions you skipped when you update from 0.2.6 or earlier.
+
 ## 0.2.7 — 2026-11-21
 
 - Tabs: Settings › Window › Tabs › Style chooses the look of the tab bar: Mac, the rounded bar with the tabs inside, as before; or Windows, tabs with rounded tops up in the title bar, the active one joined to the terminal, as in Windows Terminal.
