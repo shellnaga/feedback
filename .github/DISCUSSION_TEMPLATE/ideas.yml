@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         Tell us what would make Shell'Naga better for you. Search the existing ideas first and add your vote or details
-        there. A bug belongs in [Issues](https://github.com/shellnaga/shellnaga/issues/new/choose).
+        there. A bug belongs in [Issues](https://github.com/shellnaga/feedback/issues/new/choose).
   - type: textarea
     id: problem
     attributes:

@@ -13,24 +13,24 @@ and where you report bugs and share ideas.
 ## Download
 
 - **[shellnaga.sh/#download](https://shellnaga.sh/#download)** is the official download page.
-- **[Releases](https://github.com/shellnaga/shellnaga/releases)** carry the same installers (`.msi`, `.exe`,
+- **[Releases](https://github.com/shellnaga/feedback/releases)** carry the same installers (`.msi`, `.exe`,
   portable `.zip`) and the same `SHA256SUMS.txt` as the site. The in-app update check uses shellnaga.sh.
 - Verify a download with `Get-FileHash .\shellnaga-<version>-x64-setup.msi` and compare it with `SHA256SUMS.txt`.
 
 ## What's new
 
-See the [CHANGELOG](CHANGELOG.md) or the [Releases](https://github.com/shellnaga/shellnaga/releases) page.
+See the [CHANGELOG](CHANGELOG.md) or the [Releases](https://github.com/shellnaga/feedback/releases) page.
 
 ## Report a bug
 
-[Open a bug report](https://github.com/shellnaga/shellnaga/issues/new/choose). The form asks for the app version,
+[Open a bug report](https://github.com/shellnaga/feedback/issues/new/choose). The form asks for the app version,
 your Windows version, the shell you were using and the steps to reproduce. Please do not include passwords,
 host names, keys or other personal data in logs and screenshots.
 
 ## Ideas and questions
 
-Use [Discussions](https://github.com/shellnaga/shellnaga/discussions): feature ideas, how-to questions and
-general feedback. Please search before posting; a bug belongs in [Issues](https://github.com/shellnaga/shellnaga/issues).
+Use [Discussions](https://github.com/shellnaga/feedback/discussions): feature ideas, how-to questions and
+general feedback. Please search before posting; a bug belongs in [Issues](https://github.com/shellnaga/feedback/issues).
 
 ## More
 
