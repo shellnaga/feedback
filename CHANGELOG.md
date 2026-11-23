@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/shellnaga/releases) or <https://shellnaga.sh/#download>.
+All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/feedback/releases) or <https://shellnaga.sh/#download>.
 
 ## 0.2.8 — 2026-11-21
 

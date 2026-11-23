@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time. For ideas and questions, use [Discussions](https://github.com/shellnaga/shellnaga/discussions).
+        Thanks for taking the time. For ideas and questions, use [Discussions](https://github.com/shellnaga/feedback/discussions).
         **Please do not include passwords, private keys, host names, IP addresses or other personal data** in this report.
   - type: input
     id: version
