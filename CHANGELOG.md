@@ -2,6 +2,22 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/feedback/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.9 — 2026-11-23
+
+- Docker: a Windows container without sh (nanoserver) now opens with cmd.
+- Screen readers: Narrator activates a tab from the tab list again (it used to say "Item is disabled"), and a renamed tab is announced with its new name.
+- Screen readers: the search bar (with its options and the "3 of 12" count) and the SFTP panel (path, buttons, file actions and the transfer queue, with progress) can be reached and used.
+- SFTP panel: works from the keyboard. Ctrl+Shift+S takes the keyboard to it and Esc gives it back; Tab moves between the path, the files and the queue; Enter, Backspace, Del, F2 and Ctrl+C act on the selection; Del in the queue cancels a transfer.
+- ZMODEM over a slow or pausing serial line finishes cleanly instead of ending with "too many CRC errors".
+- Linux, Wayland: the window no longer closes by itself now and then right after it opens.
+- Linux: the quake window shows on the first press of its shortcut, drawn at once, on GNOME, KDE and sway.
+- Linux: the global shortcut works for an AppImage that is not installed in the menu, and on KDE its permission dialog shows above the quake window.
+- Linux: Open in Files for an SFTP folder opens it in Files (GNOME) or Dolphin (KDE).
+- Linux: a serial port that the system does not list, such as a virtual one, opens when you type its name or its path under /dev.
+- Linux: SFTP downloads make the Downloads folder when it is missing, an unknown --profile no longer tries WSL, and closing a window says that programs started with nohup or disown keep running.
+- Windows: updates run through a small updater installed with the app, instead of a temporary copy of Shell'Naga, and a damaged install without it offers the installer from the site.
+- Windows: when an update fails on a per-user install, Shell'Naga stays in Settings › Apps and can still be uninstalled.
+
 ## 0.2.8 — 2026-11-21
 
 - What's new also shows the notes of the versions you skipped when you update from 0.2.6 or earlier.
