@@ -2,6 +2,21 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/feedback/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.10 — 2026-11-24
+
+- The font list (Settings › Appearance › Font) opens under its field and shows each font in its own face, grouped into installed fonts and free fonts to install. The preview follows the highlighted font, and Esc goes back to the one you had. A free font installs in place with Install and use.
+- The Fallback font and Default shell for new tabs lists also open under their field.
+- Menus opened from a button (the new tab ▾, the tab list's …, the sidebar's +, and New ▾ and ⋯ in Settings › Profiles) open below or above the button and never cover it.
+- Agent usage history: a filter and a column by account (Claude Code and Codex), and you can give each account a name (Rename accounts…). Up to two cards show when they matter: an expensive model on light work, sessions that re-read too much context, and the pace against the 7-day limit.
+- The Agent usage history tab is simpler: four numbers, one chart of tokens by day, the top projects and the token mix, and a session's detail opens in a dialog.
+- Status line: Shell'Naga can draw the status line under the Claude Code prompt, laid out in a visual editor in Settings › Agent usage, and Apply to Codex sets the matching items of the Codex status line.
+- Windows: window opacity works again: with the Auto background, an opacity below 1 lets the desktop show through, unblurred, as in Windows Terminal (choose Acrylic or Mica for a blurred material). The Solid background is always opaque, and Settings says so. In the Windows tab style, the new-tab button now sits right after the tabs, and the settings and sidebar buttons stay at the right end of the title bar.
+- More fonts shows each font as a card with a sample drawn in that font.
+- Dialogs open in the middle of the window, with the window dimmed behind them.
+- SSH and mosh show a Connecting… card with each step while they connect (Esc cancels). When the connection fails, the card says why in plain words and offers Retry (Enter) and Close (Esc).
+- SSH: ConnectTimeout in ~/.ssh/config now sets how long Shell'Naga waits for that host, as in OpenSSH.
+- The profile sidebar no longer has the footer of key hints; the keys are in the buttons' tooltips and in the right-click menu.
+
 ## 0.2.9 — 2026-11-23
 
 - Docker: a Windows container without sh (nanoserver) now opens with cmd.
