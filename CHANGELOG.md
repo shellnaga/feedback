@@ -2,7 +2,13 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/feedback/releases) or <https://shellnaga.sh/#download>.
 
-## 0.2.10 — 2026-11-24
+## 0.2.12 — 2026-11-27
+
+- Windows: Shell'Naga is ready for the Microsoft Store. The Store signs the package, so Windows installs it without the SmartScreen or Smart App Control prompts. A copy installed from the Store gets its updates from the Store, and Settings says so; the shellnaga command works in any terminal through the Store's app alias.
+- In the Store copy, Start with Windows and Open in Shell'Naga in the Explorer menu are not available yet, and Settings explains why.
+- Linux: Fedora and other rpm systems can install Shell'Naga from its signed dnf repository, with updates through dnf upgrade. The signed .rpm is also on the download page.
+
+## 0.2.10 — 2026-11-27
 
 - The font list (Settings › Appearance › Font) opens under its field and shows each font in its own face, grouped into installed fonts and free fonts to install. The preview follows the highlighted font, and Esc goes back to the one you had. A free font installs in place with Install and use.
 - The Fallback font and Default shell for new tabs lists also open under their field.
@@ -17,7 +23,7 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - SSH: ConnectTimeout in ~/.ssh/config now sets how long Shell'Naga waits for that host, as in OpenSSH.
 - The profile sidebar no longer has the footer of key hints; the keys are in the buttons' tooltips and in the right-click menu.
 
-## 0.2.9 — 2026-11-23
+## 0.2.9 — 2026-11-27
 
 - Docker: a Windows container without sh (nanoserver) now opens with cmd.
 - Screen readers: Narrator activates a tab from the tab list again (it used to say "Item is disabled"), and a renamed tab is announced with its new name.
@@ -33,11 +39,11 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - Windows: updates run through a small updater installed with the app, instead of a temporary copy of Shell'Naga, and a damaged install without it offers the installer from the site.
 - Windows: when an update fails on a per-user install, Shell'Naga stays in Settings › Apps and can still be uninstalled.
 
-## 0.2.8 — 2026-11-21
+## 0.2.8 — 2026-11-27
 
 - What's new also shows the notes of the versions you skipped when you update from 0.2.6 or earlier.
 
-## 0.2.7 — 2026-11-21
+## 0.2.7 — 2026-11-27
 
 - Tabs: Settings › Window › Tabs › Style chooses the look of the tab bar: Mac, the rounded bar with the tabs inside, as before; or Windows, tabs with rounded tops up in the title bar, the active one joined to the terminal, as in Windows Terminal.
 - Tabs: the × that closes a tab is two thin strokes, quiet until the pointer is on it.
@@ -47,11 +53,11 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - What's new after an update shows the notes of every version you skipped, newest first, each under its version.
 - Statistics: at All statistics, the daily count also says, in ranges, on how many of the 7 days before you opened the app, how much memory the PC has and who makes its graphics card (never the model); the days of use stay on your PC and go away when you turn the statistics off. Errors only and Off send none of it.
 
-## 0.2.6 — 2026-11-21
+## 0.2.6 — 2026-11-27
 
 - The terminal is no longer announced as "read only", so NVDA speaks the letters and words you type, as it does in Windows Terminal.
 
-## 0.2.5 — 2026-11-21
+## 0.2.5 — 2026-11-27
 
 - SSH: the passphrase of an encrypted key is asked only after the server accepts that key; a key the server refuses asks nothing, and the login goes on to the next way in (the saved password, for example). An old PEM key with no .pub beside it still asks first, as in OpenSSH.
 - The passphrase sheet says it unlocks the key file on this computer and is not the server's password; "Skip this key" (or Esc) goes on to the next way in, a passphrase you chose to save goes to the vault only once the key has logged in, and the question closes by itself if the connection drops.
@@ -76,7 +82,7 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - A profile in profiles.toml with an invalid id shows a warning on Settings › Profiles instead of disappearing silently; the other profiles still load.
 - Tab titles show a composed emoji (a family, a skin tone) as one, cut it whole when the title is too long, and show Hebrew or Arabic in reading order; so do the sidebar's names.
 
-## 0.2.4 — 2026-11-20
+## 0.2.4 — 2026-11-27
 
 - The profile sidebar has a search field on top: type to filter by name, user, host or group, with the part found in bold; ↑ ↓ move, Enter opens, Ctrl+Enter opens in a pane to the right, F2 edits.
 - Ctrl+Shift+B now puts the keyboard in the sidebar's search, opening the sidebar if it is closed, and closes it when the keyboard is already there; Esc goes back to the terminal and leaves the sidebar open.
@@ -99,7 +105,7 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - From the update after 0.2.4 on, updating from the app shows Shell'Naga's splash screen where the window was until the new version opens, instead of the Windows Installer box (an install for all users still asks for administrator rights).
 - The Roll back option is gone; a failed update still restores the previous version by itself.
 
-## 0.2.3 — 2026-11-20
+## 0.2.3 — 2026-11-27
 
 - Ctrl+Shift+B now shows or hides the profile sidebar, and a button for it sits at the end of the tab bar; to give the key back to a program (nvim, helix), set `"ctrl+shift+b" = "none"` in Settings › Key bindings.
 - The ~/.ssh/config section is now called "SSH config" in Connect…, the sidebar and Settings › Profiles, with the path beside it.
@@ -115,7 +121,7 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - Tabs opened with `--profile` or from the jump list no longer say "restored": they show "[SSH session · Enter to connect]" (or the serial, Telnet or raw socket version) and wait for Enter; only a session brought back from the last run says "restored".
 - Correction to the 0.2.2 notes: in Connect…, “Save this connection” is on for a destination typed in the box and off when the destination comes from a link or `--quick-connect`.
 
-## 0.2.2 — 2026-11-19
+## 0.2.2 — 2026-11-27
 
 - Connect… (Ctrl+Shift+O): one box for saved connections, recent ones and ~/.ssh/config hosts; type user@host to connect.
 - Command line: `shellnaga --quick-connect [destination]` and a `ssh://` or `telnet://` link given as an argument open Connect… with the text filled in; nothing connects until you press Enter.
@@ -146,7 +152,7 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - Closing the last window while an update is being installed no longer interrupts it: Shell'Naga finishes, or puts the previous version back, before it exits.
 - Other stability fixes.
 
-## 0.2.1 — 2026-11-17
+## 0.2.1 — 2026-11-27
 
 - Optional AI assistant, off by default: explains a failed command or writes one for you.
 - The AI uses a local model or your own key, and never runs a command on its own.
@@ -167,7 +173,7 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - shellnaga --version prints the version without opening a window.
 - Other stability fixes.
 
-## 0.2.0 — 2026-11-14
+## 0.2.0 — 2026-11-27
 
 - 15 free coding fonts to install from Settings › Appearance, no admin needed.
 - What's new now shows in your language, as an easy-to-read list.
@@ -180,7 +186,7 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - Plugins: removing a plugin no longer fails with an "Access denied" error.
 - Other stability fixes.
 
-## 0.1.2 — 2026-11-12
+## 0.1.2 — 2026-11-27
 
 - Settings: the "Modified" filter now also works on the page you are on.
 - Settings work with screen readers (Narrator, NVDA).
@@ -190,7 +196,7 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - Symbols such as ✳ ✔ ☂ show as text in the text color; real emoji stay in color.
 - Warnings in Settings show in the warning color.
 
-## 0.1.1 — 2026-11-12
+## 0.1.1 — 2026-11-27
 
 - Settings: modified options are marked, each one has "Reset to default", and the search has a "Modified" filter.
 - Settings: labels fit in every language, and options that only apply to new tabs or connections say so.
@@ -202,7 +208,7 @@ All notable changes to Shell'Naga, newest first. Downloads and checksums: [Relea
 - Anonymous usage statistics: no banner inside the app anymore; the installer and the website explain them.
 - Closing a tab with a program still running in it asks first more reliably.
 
-## 0.1.0 — 2026-11-11
+## 0.1.0 — 2026-11-27
 
 - First public release.
 - Native Windows terminal: WSL, PowerShell, Git Bash and cmd in one window, with tabs and split panes.
