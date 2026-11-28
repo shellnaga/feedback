@@ -2,6 +2,10 @@
 
 All notable changes to Shell'Naga, newest first. Downloads and checksums: [Releases](https://github.com/shellnaga/feedback/releases) or <https://shellnaga.sh/#download>.
 
+## 0.2.14 — 2026-11-28
+
+- Linux: the apt and dnf repositories and the GitHub release get this version, with the changes of 0.2.13, which reached only Windows and the download page.
+
 ## 0.2.13 — 2026-11-27
 
 - Windows: in the Store copy, the taskbar and the Start menu show the Shell'Naga icon sharp at every size, with no colored plate behind it.
